@@ -1,0 +1,102 @@
+
+WM_N01_GET_VERSION
+  wParam - 0
+  lParam - 0
+  戻り値 - (int)バージョン
+  機能:
+    n01のバージョンを取得します。
+
+WM_N01_GET_OPTION
+  wParam - 0
+  lParam - 0
+  戻り値 - (OPTION_INFO *)オプション情報
+  機能:
+    オプションを取得します。
+
+WM_N01_GET_GAME_OPTION
+  wParam - 0
+  lParam - 0
+  戻り値 - (GAME_INFO *)ゲーム情報
+  機能:
+    現在ゲーム中のゲーム情報を取得します。
+
+WM_N01_GET_SCORE_INFO
+  wParam - 0
+  lParam - 0
+  戻り値 - (SCORE_INFO *)スコア情報
+  機能:
+    現在ゲーム中のスコア情報を取得します。
+
+WM_N01_GET_SCORE_HISTORY
+  wParam - 0
+  lParam - 0
+  戻り値 - (SCORE_HISTORY *)スコア履歴
+  機能:
+    現在ゲーム中のスコア情報を取得します。
+
+WM_N01_GET_SCORE_BUFFER
+  wParam - 0
+  lParam - 0
+  戻り値 - (DRAW_BUFFER *)描画情報 (score_list.c)
+  機能:
+    スコア一覧画面の描画情報を取得します。
+
+WM_N01_GET_INPUT_POS
+  wParam - (int *)x
+  lParam - (int *)y
+  戻り値 - MAKELPARAM(x, y)
+  機能:
+    現在の入力位置を取得します。
+
+WM_N01_GET_WINDOW
+  wParam - 0
+  lParam - 0
+  戻り値 - (WINDOW_INFO *)ウィンドウ情報
+  機能:
+    ウィンドウ情報を取得します。
+
+
+WM_N01_GET_CSV
+  wParam - 0
+  lParam - (SCORE_INFO *)スコア情報
+  戻り値 - (TCHAR *)CSV文字列
+  機能:
+    スコア情報からCSVを生成します。
+
+WM_N01_FREE_CSV
+  wParam - 0
+  lParam - (TCHAR *)CSV文字列
+  戻り値 - 0
+  機能:
+    CSV文字列を解放します。
+
+
+WM_N01_REFRESH
+  wParam - 0
+  lParam - 0
+  戻り値 - 0
+  機能:
+    ウィンドウの情報を更新します。
+
+WM_N01_GAME_ON
+  wParam - (BOOL)FALSE - 通常ゲーム, TRUE - スケジュールモード
+  lParam - 0
+  戻り値 - (BOOL)FALSE - 失敗, TRUE - 成功
+  機能:
+    ゲームを開始します。
+
+WM_N01_SCORE_INPUT
+  wParam - (int)入力するスコア
+  lParam - (int)0 - 次の入力域に移動, 1 - 入力域を移動しない
+  戻り値 - 0
+  機能:
+    スコアを入力します。
+
+
+WM_N01_SET_INPUT_POS
+  wParam - (BOOL)FALSE - 現在の入力値を破棄する, TRUE - 現在の入力値を反映する
+  lParam - MAKELPARAM(x, y)
+  戻り値 - 0
+  機能:
+    入力位置を変更します。
+    x と y は -1 を設定すると、入力位置の変更は行われません。

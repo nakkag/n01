@@ -1,0 +1,1702 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 日本語 resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_JPN)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      MOVEABLE PURE   "res\\manifest.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_ACCELERATOR ACCELERATORS DISCARDABLE 
+BEGIN
+    VK_DOWN,        ID_ACCEL_DOWN,          VIRTKEY, NOINVERT
+    VK_END,         ID_ACCEL_END,           VIRTKEY, NOINVERT
+    VK_ESCAPE,      ID_ACCEL_ESC,           VIRTKEY, NOINVERT
+    VK_HOME,        ID_ACCEL_HOME,          VIRTKEY, NOINVERT
+    VK_NEXT,        ID_ACCEL_NEXT,          VIRTKEY, NOINVERT
+    VK_PRIOR,       ID_ACCEL_PRIOR,         VIRTKEY, NOINVERT
+    VK_RETURN,      ID_ACCEL_TAB,           VIRTKEY, NOINVERT
+    VK_RETURN,      ID_ACCEL_STAB,          VIRTKEY, SHIFT, NOINVERT
+    VK_TAB,         ID_ACCEL_TAB,           VIRTKEY, NOINVERT
+    VK_TAB,         ID_ACCEL_STAB,          VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          ID_ACCEL_UP,            VIRTKEY, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON_MAIN           ICON    DISCARDABLE     "res\\icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_MIDDLE DIALOG DISCARDABLE  0, 0, 220, 75
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ミドル フォー ディドル"
+FONT 12, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "キャンセル",IDCANCEL,160,55,50,14
+    LTEXT           "勝ったプレイヤーのボタンを押してください。",IDC_STATIC,
+                    10,10,200,10
+    PUSHBUTTON      "",IDC_BUTTON_P1,10,25,95,20
+    PUSHBUTTON      "",IDC_BUTTON_P2,115,25,95,20
+END
+
+IDD_DIALOG_GAME_OPTION DIALOG DISCARDABLE  0, 0, 236, 200
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ゲーム設定"
+FONT 12, "ＭＳ Ｐゴシック"
+BEGIN
+    GROUPBOX        "開始スコア",IDC_STATIC,5,5,225,45
+    CONTROL         "301",IDC_RADIO_301,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,15,17,26,10
+    CONTROL         "501",IDC_RADIO_501,"Button",BS_AUTORADIOBUTTON,45,17,26,
+                    10
+    CONTROL         "1001",IDC_RADIO_1001,"Button",BS_AUTORADIOBUTTON,75,17,
+                    27,10
+    CONTROL         "その他:",IDC_RADIO_ETC,"Button",BS_AUTORADIOBUTTON,105,
+                    17,35,10
+    EDITTEXT        IDC_EDIT_SCORE,144,16,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SCORE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,170,25,9,15
+    CONTROL         "ラウンドを制限する:",IDC_CHECK_ROUND_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,32,70,10
+    EDITTEXT        IDC_EDIT_ROUND,90,31,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_ROUND,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,122,30,9,15
+    GROUPBOX        "レッグ",IDC_STATIC,5,55,225,45
+    LTEXT           "レッグ数:",IDC_STATIC_LEG,15,68,40,10,NOT WS_VISIBLE
+    CONTROL         "レッグを制限する:",IDC_CHECK_LEG_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,67,70,10
+    EDITTEXT        IDC_EDIT_LEG,90,66,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_LEG,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,125,65,9,15
+    CONTROL         "ベスト オブ... ",IDC_CHECK_BEST_OF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,135,67,65,10
+    CONTROL         "セット毎に先攻を入れ替える",IDC_CHECK_CHANGE_FIRST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,15,82,145,10
+    GROUPBOX        "プレイヤー1",IDC_STATIC,5,105,110,70
+    LTEXT           "名前:",IDC_STATIC_P1,10,116,60,10
+    CONTROL         "COM",IDC_CHECK_COM1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,115,30,10
+    COMBOBOX        IDC_COMBO_COM1,10,127,100,78,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_P1_NAME,10,127,100,133,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "個別の開始スコアを指定",IDC_CHECK_P1_SCORE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,144,100,10
+    EDITTEXT        IDC_EDIT_P1_SCORE,10,155,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_P1_SCORE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,50,154,9,15
+    GROUPBOX        "プレイヤー2",IDC_STATIC,120,105,110,70
+    LTEXT           "名前:",IDC_STATIC_P2,125,116,60,10
+    CONTROL         "COM",IDC_CHECK_COM2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,196,115,30,10
+    COMBOBOX        IDC_COMBO_COM2,125,127,100,78,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_P2_NAME,125,127,100,133,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "個別の開始スコアを指定",IDC_CHECK_P2_SCORE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,125,144,100,10
+    EDITTEXT        IDC_EDIT_P2_SCORE,125,155,35,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_P2_SCORE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,165,154,9,15
+    PUSHBUTTON      "設定保存(&S)",IDC_BUTTON_SAVE,5,180,50,14
+    DEFPUSHBUTTON   "OK",IDOK,125,180,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,180,180,50,14
+END
+
+IDD_DIALOG_OPTION_KEY DIALOG DISCARDABLE  0, 0, 241, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "キー"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "登録されているキー設定(&S):",IDC_STATIC,10,5,150,10
+    CONTROL         "List1",IDC_LIST_KEY,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,5,15,210,195
+    CONTROL         "&up",IDC_BUTTON_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    220,80,15,15
+    CONTROL         "do&wn",IDC_BUTTON_DOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,220,130,15,15
+    PUSHBUTTON      "追加(&A)...",IDC_BUTTON_ADD,75,215,50,14
+    PUSHBUTTON      "編集(&E)...",IDC_BUTTON_EDIT,130,215,50,14
+    PUSHBUTTON      "削除(&D)",IDC_BUTTON_DELETE,185,215,50,14
+END
+
+IDD_DIALOG_SET_KEY DIALOG DISCARDABLE  0, 0, 190, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "キー選択"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "機能(&F):",IDC_STATIC,9,10,75,10
+    COMBOBOX        IDC_COMBO_ACTION,9,20,125,215,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "定型値(&N):",IDC_STATIC,139,10,40,10
+    EDITTEXT        IDC_EDIT_INPUT,139,20,40,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_INPUT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,175,40,10,20
+    LTEXT           "ショートカット キー(&K):",IDC_STATIC,9,40,81,10
+    CONTROL         "HotKey1",IDC_HOTKEY_KEY,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,9,50,85,15
+    DEFPUSHBUTTON   "OK",IDOK,75,125,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,130,125,50,14
+END
+
+IDD_DIALOG_SCORE_LIST DIALOGEX 0, 0, 258, 286
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "スコア一覧"
+FONT 9, "ＭＳ Ｐゴシック", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_LEG,1,2,90,205,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_VIEW_SCORE,"score_list_wnd",WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,0,18,258,225
+    CONTROL         "",IDC_VIEW_P1,"score_player_wnd",WS_BORDER,90,255,40,25
+    CONTROL         "",IDC_VIEW_P2,"score_player_wnd",WS_BORDER,140,255,40,
+                    25
+    CTEXT           "",IDC_STATIC_P1,0,244,70,19,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    CTEXT           "",IDC_STATIC_P2,188,244,70,19,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    PUSHBUTTON      "閉じる",IDCANCEL,204,268,50,14
+END
+
+IDD_DIALOG_ARRANGE DIALOG DISCARDABLE  0, 0, 234, 258
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "アレンジ"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    EDITTEXT        IDC_EDIT_LEFT,3,4,45,16,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LEFT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,48,4,11,15
+    CONTROL         "Tree1",IDC_TREE_ARRANGE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_DISABLEDRAGDROP | WS_BORDER | 
+                    WS_TABSTOP,0,24,234,211
+    PUSHBUTTON      "閉じる",IDCANCEL,180,240,50,14
+END
+
+IDD_DIALOG_COM DIALOG DISCARDABLE  0, 0, 215, 75
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CTEXT           "",IDC_STATIC_THROW_1,10,10,55,30,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "",IDC_STATIC_THROW_2,80,10,55,30,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "",IDC_STATIC_THROW_3,150,10,55,30,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "中止(&S)",IDCANCEL,75,52,65,15
+END
+
+IDD_DIALOG_OPTION_VIEW DIALOG DISCARDABLE  0, 0, 241, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "表示"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "",IDC_STATIC_FRAME,11,5,220,125,SS_SUNKEN | NOT 
+                    WS_GROUP
+    GROUPBOX        "色",IDC_STATIC,11,135,220,60
+    LTEXT           "指定する部分(&I):",IDC_STATIC,21,145,70,10
+    COMBOBOX        IDC_COMBO_COLOR,21,155,155,145,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "色(&C):",IDC_STATIC,181,145,35,10
+    CONTROL         "",IDC_BUTTON_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    181,155,40,13
+    PUSHBUTTON      "リセット(&R)",IDC_BUTTON_RESET,21,174,50,14
+    GROUPBOX        "フォント(&F)",IDC_STATIC,11,198,220,32
+    COMBOBOX        IDC_COMBO_FONT,21,210,105,135,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_GAME_HISTORY DIALOG DISCARDABLE  0, 0, 253, 278
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "ゲーム履歴"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LISTBOX         IDC_LIST_SCORE_LIST,0,0,252,235,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "表示(&V)...",IDC_BUTTON_VIEW,89,240,50,14
+    PUSHBUTTON      "CSV保存(&S)...",IDC_BUTTON_SAVE,144,240,50,14
+    PUSHBUTTON      "クリア(&C)",IDC_BUTTON_CLEAR,199,240,50,14
+    PUSHBUTTON      "閉じる",IDCANCEL,199,260,50,14
+END
+
+IDD_DIALOG_GAME_SCHEDULE DIALOG DISCARDABLE  0, 0, 319, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "新規スケジュール"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "登録されているセット(&T):",IDC_STATIC,10,5,150,10
+    CONTROL         "List1",IDC_LIST_GAME,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,5,15,290,155
+    CONTROL         "&up",IDC_BUTTON_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    300,60,15,15
+    CONTROL         "do&wn",IDC_BUTTON_DOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,300,110,15,15
+    PUSHBUTTON      "設定保存(&S)",IDC_BUTTON_SAVE,5,175,50,14
+    PUSHBUTTON      "追加(&A)...",IDC_BUTTON_ADD,155,175,50,14
+    PUSHBUTTON      "編集(&E)...",IDC_BUTTON_EDIT,210,175,50,14
+    PUSHBUTTON      "削除(&D)",IDC_BUTTON_DELETE,265,175,50,14
+    DEFPUSHBUTTON   "ゲーム開始",IDOK,210,205,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,265,205,50,14
+END
+
+IDD_DIALOG_OPTION_PLAYER DIALOG DISCARDABLE  0, 0, 241, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "プレイヤー情報"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    CONTROL         "スコア平均をラウンド単位(PPR)で表示する(&V)",
+                    IDC_CHECK_AVG_PPR,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    10,10,215,10
+    GROUPBOX        "プレイヤー情報",IDC_STATIC,10,27,220,25
+    CONTROL         "プレイヤー名 (&P)",IDC_CHECK_NAME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,37,70,10
+    CONTROL         "- &First - ",IDC_CHECK_FIRST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,90,37,85,10
+    GROUPBOX        "Totals",IDC_STATIC,10,57,220,55
+    CONTROL         "&Sets",IDC_CHECK_SETS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,68,60,10
+    CONTROL         "&Legs",IDC_CHECK_LEGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,90,68,60,10
+    CONTROL         "&Tons",IDC_CHECK_TONS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,68,60,10
+    CONTROL         "&100+",IDC_CHECK_100,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,82,60,10
+    CONTROL         "1&40+",IDC_CHECK_140,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,90,82,60,10
+    CONTROL         "1&80's",IDC_CHECK_180S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,82,60,10
+    CONTROL         "&High Out",IDC_CHECK_HIGH_OFF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,96,60,10
+    CONTROL         "&Best Leg",IDC_CHECK_SHORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,90,96,60,10
+    CONTROL         "&Worst Leg",IDC_CHECK_LONG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,96,60,10
+    GROUPBOX        "Averages",IDC_STATIC,10,117,220,69
+    CONTROL         "&Darts",IDC_CHECK_AVG_DARTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,128,60,10
+    CONTROL         "S&core",IDC_CHECK_AVG_SCORE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,90,128,60,10
+    CONTROL         "First &9 Darts",IDC_CHECK_AVG_FIRST9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,160,128,60,10
+    CONTROL         "Check-&Out",IDC_CHECK_AVG_CHECK_OUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,142,60,10
+    CONTROL         "Check-&Out 本数",IDC_CHECK_AVG_CHECK_OUT_COUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,142,70,10
+    CONTROL         "&Keep",IDC_CHECK_AVG_KEEP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,156,60,10
+    CONTROL         "&Keep 数",IDC_CHECK_AVG_KEEP_COUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,156,70,10
+    CONTROL         "B&reak",IDC_CHECK_AVG_BREAK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,170,60,10
+    CONTROL         "B&reak 数",IDC_CHECK_AVG_BREAK_COUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,90,170,70,10
+    GROUPBOX        "Arrange",IDC_STATIC,10,191,220,25
+    CONTROL         "&Arrange",IDC_CHECK_ARRANGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,201,60,10
+END
+
+IDD_DIALOG_FINISH DIALOG DISCARDABLE  0, 0, 120, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "チェックアウト"
+FONT 12, "ＭＳ Ｐゴシック"
+BEGIN
+    PUSHBUTTON      "キャンセル",IDCANCEL,60,75,50,14
+    PUSHBUTTON      "&1本目で終了",IDC_BUTTON_FINISH_1,10,10,100,15
+    PUSHBUTTON      "&2本目で終了",IDC_BUTTON_FINISH_2,10,30,100,15
+    PUSHBUTTON      "&3本目で終了",IDC_BUTTON_FINISH_3,10,50,100,15
+END
+
+IDD_DIALOG_CHECK_OUT DIALOG DISCARDABLE  0, 0, 159, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "チェックアウトモード"
+FONT 12, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "フィニッシュ（ダブル）を狙った本数を入力してください。",
+                    IDC_STATIC,10,10,140,20
+    EDITTEXT        IDC_EDIT_COUNT,10,35,45,27,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_COUNT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,75,35,9,15
+    LTEXT           "本",IDC_STATIC,60,50,10,10
+    DEFPUSHBUTTON   "OK",IDOK,45,70,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,101,70,50,14
+END
+
+IDD_DIALOG_OPTION_PLUGIN DIALOG DISCARDABLE  0, 0, 241, 235
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "プラグイン"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "登録されているプラグイン(&S):",IDC_STATIC,10,5,150,10
+    CONTROL         "List1",IDC_LIST_PLUGIN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,5,15,210,195
+    CONTROL         "&up",IDC_BUTTON_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    220,80,15,15
+    CONTROL         "do&wn",IDC_BUTTON_DOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,220,130,15,15
+    PUSHBUTTON      "追加(&A)...",IDC_BUTTON_ADD,20,215,50,14
+    PUSHBUTTON      "削除(&D)",IDC_BUTTON_DELETE,75,215,50,14
+    PUSHBUTTON      "プロパティ(&P)...",IDC_BUTTON_PROPERTY,130,215,50,14
+    PUSHBUTTON      "キー(&K)...",IDC_BUTTON_KEY,185,215,50,14
+END
+
+IDD_DIALOG_SET_PLUGIN DIALOG DISCARDABLE  0, 0, 186, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "プラグイン選択"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LISTBOX         IDC_LIST,5,5,175,145,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,75,155,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,130,155,50,14
+END
+
+IDD_DIALOG_SET_PLUGIN_KEY DIALOG DISCARDABLE  0, 0, 123, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "キー選択"
+FONT 9, "ＭＳ Ｐゴシック"
+BEGIN
+    LTEXT           "ショートカット キー(&K):",-1,8,10,102,10
+    CONTROL         "HotKey1",IDC_HOTKEY_KEY,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,8,20,105,15
+    DEFPUSHBUTTON   "OK",IDOK,8,44,50,14
+    PUSHBUTTON      "キャンセル",IDCANCEL,64,44,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "ゲーム(&G)"
+    BEGIN
+        MENUITEM "新規ゲーム(&N)...",           ID_MENUITEM_NEW_GAME
+        MENUITEM SEPARATOR
+        MENUITEM "新規スケジュール(&E)...",     ID_MENUITEM_NEW_SCHEDULE
+        MENUITEM "スケジュール変更(&M)...",     ID_MENUITEM_SET_SCHEDULE
+        MENUITEM SEPARATOR
+        MENUITEM "ゲーム履歴(&H)...",           ID_MENUITEM_GAME_HISTORY
+        MENUITEM SEPARATOR
+        MENUITEM "オプション(&O)...",           ID_MENUITEM_OPTION
+        MENUITEM "スコアを自動保存(&S)",        ID_MENUITEM_AUTO_SAVE
+        MENUITEM "チェックアウトモード(&C)",    ID_MENUITEM_CHECK_OUT_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "n01 オンライン対戦(&L)",      ID_MENUITEM_ONLINE
+        MENUITEM SEPARATOR
+        MENUITEM "終了(&X)",                    ID_MENUITEM_EXIT
+    END
+    POPUP "表示(&V)"
+    BEGIN
+        MENUITEM "名前(&N)",                    ID_MENUITEM_SHOW_NAME
+        MENUITEM "プレイヤー情報(&P)",          ID_MENUITEM_SHOW_PLAYER
+        MENUITEM "残りスコア(&L)",              ID_MENUITEM_SHOW_LEFT
+        MENUITEM "ファンクション キー(&K)",     ID_MENUITEM_SHOW_GUIDE
+        MENUITEM SEPARATOR
+        POPUP "残りスコアのサイズ(&S)"
+        BEGIN
+            MENUITEM "大(&L)",                      ID_MENUITEM_FONT_L
+            MENUITEM "中(&M)",                      ID_MENUITEM_FONT_M
+            MENUITEM "小(&S)",                      ID_MENUITEM_FONT_S
+        END
+        MENUITEM "フルスクリーン(&F)",          ID_MENUITEM_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "インデックスをダーツ数で表示(&I)", 
+                                                ID_MENUITEM_SHOW_DARTSCOUNT
+    END
+    POPUP "スコア(&S)"
+    BEGIN
+        MENUITEM "&1本目で終了",                ID_MENUITEM_FINISH_ONE
+        MENUITEM "&2本目で終了",                ID_MENUITEM_FINISH_TWO
+        MENUITEM "&3本目で終了",                ID_MENUITEM_FINISH_THREE
+        MENUITEM SEPARATOR
+        MENUITEM "ミドル フォー ディドル(&M)...", ID_MENUITEM_MIDDLE
+        MENUITEM SEPARATOR
+        POPUP "定型入力(&I)"
+        BEGIN
+            MENUITEM "(なし)",                      ID_MENUITEM_NOTHING
+            , GRAYED
+        END
+        MENUITEM "残りスコアでの入力(&L)",      ID_MENUITEM_SCORE_LEFT
+        MENUITEM SEPARATOR
+        MENUITEM "前のレッグに戻る(&P)",        ID_MENUITEM_PREV_LEG
+        MENUITEM "スコアの入れ替え(&W)",        ID_MENUITEM_SCORE_SWAP
+        MENUITEM "スコアのクリア(&C)",          ID_MENUITEM_SCORE_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "アレンジの表示(&A)...",       ID_MENUITEM_ARRANGE
+    END
+    POPUP "ヘルプ(&H)"
+    BEGIN
+        MENUITEM "バージョン情報(&A)...",       ID_MENUITEM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXT
+//
+
+IDR_TEXT_ARRANGE        TEXT    DISCARDABLE     "res\\arrange.txt"
+IDR_TEXT_ARRANGE_COM    TEXT    DISCARDABLE     "res\\arrange_com.txt"
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,2,7,0
+ PRODUCTVERSION 0,2,7,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041104b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "nakka\0"
+            VALUE "FileDescription", "n01\0"
+            VALUE "FileVersion", "0.2.7\0"
+            VALUE "InternalName", "n01\0"
+            VALUE "LegalCopyright", "Copyright (C) 1996-2017 by Ohno Tomoaki. All rights reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "n01.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "n01\0"
+            VALUE "ProductVersion", "0.2.7\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x411, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_SET_PLUGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_DOUBLE     "Double"
+    IDS_STRING_P_LONG       "Worst"
+    IDS_STRING_P_AVG_FIRST9 "First 9"
+    IDS_STRING_P_FIRST9_SCORE "First 9 Score"
+    IDS_STRING_P_FIRST9_DARTS "First 9 Darts"
+    IDS_STRING_P_AVG_KEEP   "Keep"
+    IDS_STRING_P_AVG_BREAK  "Break"
+    IDS_STRING_P_AVG_KEEP_WON "Keep Won"
+    IDS_STRING_P_AVG_KEEP_ALL "Keep All"
+    IDS_STRING_P_AVG_BREAK_WON "Break Won"
+    IDS_STRING_P_AVG_BREAK_ALL "Break All"
+    IDS_STRING_P_FINISH_STATS "Finish Stats"
+    IDS_STRING_P_2_80_SUCCESS "2-80 Success"
+    IDS_STRING_P_2_80_FAILURE "2-80 Failure"
+    IDS_STRING_P_81_130_SUCCESS "81-130 Success"
+    IDS_STRING_P_81_130_FAILURE "81-130 Failure"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_CHECK_OUT_MODE 
+                            "チェックアウトモードに設定しました。\nゲーム中にフィニッシュ(ダブル)を狙った本数の入力画面を表示します。"
+    IDS_STRING_AUTO_SAVE_MODE "'%s' にセット毎のスコアを自動保存します。"
+    IDS_STRING_PREV_LEG     "前のレッグに戻ってもよろしいですか？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_SCH_START_SCORE "開始スコア"
+    IDS_STRING_OP_SCH_ROUND "ラウンド"
+    IDS_STRING_OP_SCH_LEG   "レッグ"
+    IDS_STRING_OP_SCH_P1    "プレイヤー1"
+    IDS_STRING_OP_SCH_P2    "プレイヤー2"
+    IDS_STRING_OP_SCH_BEST_OF "Best of %d"
+    IDS_STRING_OP_SCH_OK    "OK"
+    IDS_STRING_OP_SCH_TITLE "スケジュール変更"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_DEFAULT_FONT "Arial"
+    IDS_STRING_ARRANGE_FONT "ＭＳ ゴシック"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_POS_PLAYER_TEXT "プレイヤー情報のテキスト"
+    IDS_STRING_POS_PLAYER_INFO_TITLE "プレイヤー情報のヘッダーテキスト"
+    IDS_STRING_POS_VIEW_SEPARATE "ビューの境界線"
+    IDS_STRING_POS_GUIDE_BACKGROUND "ファンクション キーの背景"
+    IDS_STRING_POS_GUIDE_TEXT "ファンクション キーのテキスト"
+    IDS_STRING_POS_GUIDE_SELECT_BACKGROUND "ファンクション キーの選択"
+    IDS_STRING_POS_GUIDE_SELECT_TEXT "ファンクション キーの選択テキスト"
+    IDS_STRING_POS_GUIDE_BOX_BACKGROUND "ファンクション キーのキー背景"
+    IDS_STRING_POS_GUIDE_BOX_TEXT "ファンクション キーのキーテキスト"
+    IDS_STRING_POS_GUIDE_BOX_FRAME "ファンクション キーの枠線"
+    IDS_STRING_POS_GUIDE_BOX_DISABLE "ファンクション キーの無効色"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_RESET_COLOR  "色情報を初期化してもよろしいですか？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_POS_BACKGROUND "スコア一覧の背景 (偶数行)"
+    IDS_STRING_POS_ODD_BACKGROUND "スコア一覧の背景 (奇数行)"
+    IDS_STRING_POS_SCORED_TEXT "スコア一覧のテキスト (Scored)"
+    IDS_STRING_POS_TOGO_TEXT "スコア一覧のテキスト (To Go)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_POS_HEADER_BACKGROUND "スコア一覧のヘッダー背景"
+    IDS_STRING_POS_HEADER_TEXT "スコア一覧のヘッダーテキスト"
+    IDS_STRING_POS_LAST3NUMBER_TEXT "スコア一覧のラスト3テキスト"
+    IDS_STRING_POS_LINE     "スコア一覧の線"
+    IDS_STRING_POS_SEPARATE "スコア一覧の区切り線"
+    IDS_STRING_POS_TON_CIRCLE "スコア一覧のTON円"
+    IDS_STRING_POS_INPUT_BACKGROUND "入力の背景"
+    IDS_STRING_POS_INPUT_TEXT "入力のテキスト"
+    IDS_STRING_POS_INPUT_SELECT_BACKGROUND "入力の選択"
+    IDS_STRING_POS_INPUT_SELECT_TEXT "入力の選択テキスト"
+    IDS_STRING_POS_LEFT_BACKGROUND "残りスコアの背景"
+    IDS_STRING_POS_LEFT_TEXT "残りスコアのテキスト"
+    IDS_STRING_POS_LEFT_ACTIVE_BORDER "残りスコアのアクティブ境界"
+    IDS_STRING_POS_PLAYER_NAME_BACKGROUND "プレイヤー名の背景"
+    IDS_STRING_POS_PLAYER_NAME_TEXT "プレイヤー名のテキスト"
+    IDS_STRING_POS_PLAYER_BACKGROUND "プレイヤー情報の背景"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_SCORE_CLEAR "スコアのクリア(&C)"
+    ID_MENUITEM_ARRANGE     "アレンジの表示(&A)..."
+    ID_MENUITEM_GAME_HISTORY "ゲーム履歴(&H)..."
+    ID_MENUITEM_AUTO_SAVE   "スコアを自動保存(&S)"
+    ID_MENUITEM_NEW_SCHEDULE "新規スケジュール(&E)..."
+    ID_MENUITEM_OPTION      "オプション(&O)..."
+    ID_MENUITEM_SET_SCHEDULE "スケジュール変更(&M)..."
+    ID_MENUITEM_CHECK_OUT_MODE "チェックアウトモード(&C)"
+    ID_MENUITEM_PREV_LEG    "前のレッグに戻る(&P)"
+    ID_MENUITEM_FONT_L      "大(&L)"
+    ID_MENUITEM_FONT_M      "中(&M)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_LIST_SET  "%d Sets"
+    IDS_STRING_OP_LIST_LEG  "%d Legs"
+    IDS_STRING_OP_LIST_DARTS "%d Darts"
+    IDS_STRING_OP_LIST_PLAYER_INFO "プレイヤー情報"
+    IDS_STRING_OP_LIST_CLEAR 
+                            "終了しているセットをクリアしてもよろしいですか？"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_KEY_ACTION "機能"
+    IDS_STRING_OP_KEY_KEY   "キー"
+    IDS_STRING_OP_DELETE    "選択している項目を削除してもよろしいですか？"
+    IDS_STRING_OP_KEY_NUMBER "定型入力"
+    IDS_STRING_OP_KEY_NUMBER_ERROR "定型値は 0～180 です。"
+    IDS_STRING_OP_KEY_NOTHING "なし"
+    IDS_STRING_OP_PLUGIN_TITLE "タイトル"
+    IDS_STRING_OP_PLUGIN_DLL "DLL"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_GAME_SAVE "現在の設定を保存しました。"
+    IDS_STRING_OP_NAME      "名前:"
+    IDS_STRING_OP_LEVEL_TITLE "レベル:"
+    IDS_STRING_OP_LEVEL     "Level %d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_TONS       "Tons"
+    IDS_STRING_P_100        "100+"
+    IDS_STRING_P_140        "140+"
+    IDS_STRING_P_180S       "180's"
+    IDS_STRING_P_HIGHOFF    "High Out"
+    IDS_STRING_P_SHORT      "Best"
+    IDS_STRING_P_AVERAGE    "Averages"
+    IDS_STRING_P_AVG_SCORE  "Score"
+    IDS_STRING_P_AVG_DARTS  "Darts"
+    IDS_STRING_P_AVG_CHECK_OUT "Check"
+    IDS_STRING_P_AVG_CHECK_OUT_LARGE "Check-Out"
+    IDS_STRING_P_ARRANGE    "Arrange"
+    IDS_STRING_P_SEPARATE   ": "
+    IDS_STRING_P_COUNTS     "Counts"
+    IDS_STRING_P_WIN_DARTS  "Darts Won"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_FIRST      "- First -"
+    IDS_STRING_P_TOTAL      "Totals"
+    IDS_STRING_P_SETS       "Sets"
+    IDS_STRING_P_LEGS       "Legs"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_FINISH       "%d 本目で終了 (%d ダーツ)"
+    IDS_STRING_SCORE_SWAP   "このレッグのスコアを入れ替えてもよろしいですか？"
+    IDS_STRING_SCORE_CLEAR  "このレッグのスコアをクリアしてもよろしいですか？"
+    IDS_STRING_TIE          "引き分け"
+    IDS_STRING_GAME_STOP    "ゲームを中止しますか？"
+    IDS_STRING_MIDDLE       "%d ダーツで終了"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_SCORED       "Scored"
+    IDS_STRING_TO_GO        "To Go"
+    IDS_STRING_ROUND        "Round"
+    IDS_STRING_DARTS        "Darts"
+    IDS_STRING_FIRST_MARK   "*"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_TITLE        "%s - %d Legs"
+    IDS_STRING_EXIT         "n01 を終了してもよろしいですか？"
+    IDS_STRING_MENU_NOTHING "(なし)"
+    IDS_STRING_PLAYER1      "Player 1"
+    IDS_STRING_PLAYER2      "Player 2"
+    IDS_STRING_SAVE_TITLE   "CSV保存"
+    IDS_STRING_TITLE_LEG    "%s - %d Sets - (%d Legs / %d Legs)"
+    IDS_STRING_TITLE_LEG_BEST_OF "%s - %d Sets - (%d Legs / Best of %d Legs)"
+    IDS_STRING_SET_END      "%d 対 %d で %s の勝利"
+    IDS_STRING_COM          "COM (Lv.%d)"
+    IDS_STRING_COM_NAME     "COM"
+    IDS_STRING_SCHEDULE_MODE " - スケジュールモード"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACCEL_ESC            "キャンセル"
+    ID_ACCEL_NONE           "何もしない"
+    ID_ACCEL_UP             "↑"
+    ID_ACCEL_DOWN           "↓"
+    ID_ACCEL_TAB            "進む"
+    ID_ACCEL_STAB           "戻る"
+    ID_MENUITEM_SHOW_LEFT   "残りスコア(&L)"
+    ID_MENUITEM_SHOW_PLAYER "プレイヤー情報(&P)"
+    ID_MENUITEM_SHOW_DARTSCOUNT "インデックスをダーツ数で表示(&I)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_NEW_GAME    "新規ゲーム(&N)..."
+    ID_MENUITEM_EXIT        "終了(&X)"
+    ID_MENUITEM_FINISH_ONE  "&1本目で終了"
+    ID_MENUITEM_FINISH_TWO  "&2本目で終了"
+    ID_MENUITEM_FINISH_THREE "&3本目で終了"
+    ID_MENUITEM_MIDDLE      "ミドル フォー ディドル(&M)..."
+    ID_MENUITEM_SCORE_LEFT  "残りスコアでの入力(&L)"
+    ID_MENUITEM_SCORE_SWAP  "スコアの入れ替え(&W)"
+    ID_MENUITEM_SHOW_GUIDE  "ファンクション キー(&K)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_MENU_TOOL    "ツール(&T)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_PLUGIN_FUNCTION "関数名"
+    IDS_STRING_OP_PLUGIN_NO_PROP "設定可能なプロパティはありません。"
+    IDS_STRING_OP_FILESELECT "プラグインファイル選択"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_131_SUCCESS "131+ Success"
+    IDS_STRING_P_131_FAILURE "131+ Failure"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_FONT_S      "小(&S)"
+    ID_MENUITEM_SHOW_NAME   "名前(&N)"
+    IDS_STRING_LEFT         "←"
+    IDS_STRING_RIGHT        "→"
+    ID_MENUITEM_FULL_SCREEN "フルスクリーン(&F)"
+END
+
+#endif    // 日本語 resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 英語 (ｱﾒﾘｶ) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_ARRANGE DIALOG DISCARDABLE  0, 0, 290, 268
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dart Out Shots"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_LEFT,4,4,45,16,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_LEFT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,50,5,13,15
+    CONTROL         "Tree1",IDC_TREE_ARRANGE,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_DISABLEDRAGDROP | WS_BORDER | 
+                    WS_TABSTOP,0,25,289,220
+    PUSHBUTTON      "&Close",IDCANCEL,236,250,50,14
+END
+
+IDD_DIALOG_GAME_OPTION DIALOG DISCARDABLE  0, 0, 235, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Game Option"
+FONT 10, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Start Score",IDC_STATIC,5,5,225,55
+    CONTROL         "&301",IDC_RADIO_301,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,21,26,10
+    CONTROL         "&501",IDC_RADIO_501,"Button",BS_AUTORADIOBUTTON,40,21,
+                    26,10
+    CONTROL         "&1001",IDC_RADIO_1001,"Button",BS_AUTORADIOBUTTON,67,21,
+                    30,10
+    CONTROL         "&Other:",IDC_RADIO_ETC,"Button",BS_AUTORADIOBUTTON,97,
+                    21,37,10
+    EDITTEXT        IDC_EDIT_SCORE,134,20,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_SCORE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,165,25,11,15
+    CONTROL         "&Rounds:",IDC_CHECK_ROUND_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,15,40,45,10
+    EDITTEXT        IDC_EDIT_ROUND,74,39,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_ROUND,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,114,40,11,15
+    GROUPBOX        "Legs",IDC_STATIC,5,65,225,45
+    LTEXT           "&Legs:",IDC_STATIC_LEG,15,79,30,10,NOT WS_VISIBLE
+    CONTROL         "&Legs:",IDC_CHECK_LEG_LIMIT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,78,45,10
+    EDITTEXT        IDC_EDIT_LEG,74,77,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_LEG,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,104,76,11,15
+    CONTROL         "&Best of ...",IDC_CHECK_BEST_OF,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,119,78,50,10
+    CONTROL         "First player is exchanged by set start",
+                    IDC_CHECK_CHANGE_FIRST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,15,93,186,8
+    GROUPBOX        "Player 1",IDC_STATIC,5,115,110,75
+    LTEXT           "Name:",IDC_STATIC_P1,10,130,60,10
+    CONTROL         "&COM",IDC_CHECK_COM1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,81,129,30,10
+    COMBOBOX        IDC_COMBO_P1_NAME,10,141,100,113,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COM1,10,141,100,79,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "&Handicap",IDC_CHECK_P1_SCORE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,158,95,10
+    EDITTEXT        IDC_EDIT_P1_SCORE,10,170,35,12,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_P1_SCORE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,50,169,11,15
+    GROUPBOX        "Player 2",IDC_STATIC,120,115,110,75
+    LTEXT           "Name:",IDC_STATIC_P2,125,130,60,10
+    CONTROL         "CO&M",IDC_CHECK_COM2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,196,129,30,10
+    COMBOBOX        IDC_COMBO_P2_NAME,125,141,100,114,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_COM2,125,141,100,79,CBS_DROPDOWNLIST | NOT 
+                    WS_VISIBLE | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "H&andicap",IDC_CHECK_P2_SCORE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,158,95,10
+    EDITTEXT        IDC_EDIT_P2_SCORE,125,170,35,12,ES_RIGHT | 
+                    ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_P2_SCORE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,165,169,11,15
+    PUSHBUTTON      "&Save Options",IDC_BUTTON_SAVE,5,195,55,14
+    DEFPUSHBUTTON   "OK",IDOK,125,195,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,180,195,50,14
+END
+
+IDD_DIALOG_OPTION_KEY DIALOG DISCARDABLE  0, 0, 255, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Key"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Short cut &settings:",IDC_STATIC,10,5,150,10
+    CONTROL         "List1",IDC_LIST_KEY,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,5,15,225,180
+    CONTROL         "&up",IDC_BUTTON_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    235,70,15,15
+    CONTROL         "do&wn",IDC_BUTTON_DOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,235,124,15,15
+    PUSHBUTTON      "&Add...",IDC_BUTTON_ADD,90,200,50,14
+    PUSHBUTTON      "&Edit...",IDC_BUTTON_EDIT,145,200,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON_DELETE,200,200,50,14
+END
+
+IDD_DIALOG_MIDDLE DIALOG DISCARDABLE  0, 0, 219, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Middle for Diddle"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,160,55,50,14
+    LTEXT           "Please select winner player.",IDC_STATIC,10,10,200,10
+    PUSHBUTTON      "",IDC_BUTTON_P1,10,25,95,20
+    PUSHBUTTON      "",IDC_BUTTON_P2,115,25,95,20
+END
+
+IDD_DIALOG_SET_KEY DIALOG DISCARDABLE  0, 0, 190, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select key"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Function:",IDC_STATIC,9,10,75,10
+    COMBOBOX        IDC_COMBO_ACTION,9,20,125,215,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Number:",IDC_STATIC,139,10,40,10
+    EDITTEXT        IDC_EDIT_INPUT,139,20,40,13,ES_RIGHT | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_INPUT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,170,35,13,22
+    LTEXT           "Shortcut &Key:",IDC_STATIC,9,40,81,10
+    CONTROL         "HotKey1",IDC_HOTKEY_KEY,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,9,50,85,15
+    DEFPUSHBUTTON   "OK",IDOK,75,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,125,50,14
+END
+
+IDD_DIALOG_OPTION_VIEW DIALOG DISCARDABLE  0, 0, 255, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "View"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "",IDC_STATIC_FRAME,10,5,235,105,SS_SUNKEN | NOT 
+                    WS_GROUP
+    GROUPBOX        "Color",IDC_STATIC,10,115,235,60
+    LTEXT           "&Item:",IDC_STATIC,20,124,70,10
+    COMBOBOX        IDC_COMBO_COLOR,20,135,170,150,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Color:",IDC_STATIC,195,124,35,10
+    CONTROL         "",IDC_BUTTON_COLOR,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    195,135,40,13
+    PUSHBUTTON      "&Reset",IDC_BUTTON_RESET,20,153,50,14
+    GROUPBOX        "&Font",IDC_STATIC,10,177,235,32
+    COMBOBOX        IDC_COMBO_FONT,20,190,110,135,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_SCORE_LIST DIALOGEX 0, 0, 296, 266
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Score List"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COMBO_LEG,1,2,105,185,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_VIEW_SCORE,"score_list_wnd",WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP,0,18,295,208
+    CONTROL         "",IDC_VIEW_P1,"score_player_wnd",WS_BORDER,90,235,47,20
+    CONTROL         "",IDC_VIEW_P2,"score_player_wnd",WS_BORDER,145,235,47,
+                    20
+    CTEXT           "",IDC_STATIC_P1,0,227,70,16,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    CTEXT           "",IDC_STATIC_P2,225,227,70,16,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE,WS_EX_STATICEDGE
+    PUSHBUTTON      "&Close",IDCANCEL,241,248,50,14
+END
+
+IDD_DIALOG_COM DIALOG DISCARDABLE  0, 0, 215, 75
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "",IDC_STATIC_THROW_1,10,10,55,30,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "",IDC_STATIC_THROW_2,80,10,55,30,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "",IDC_STATIC_THROW_3,150,10,55,30,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    PUSHBUTTON      "&Stop",IDCANCEL,75,52,65,15
+END
+
+IDD_DIALOG_GAME_HISTORY DIALOG DISCARDABLE  0, 0, 278, 257
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Game History"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST_SCORE_LIST,0,0,277,214,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&View...",IDC_BUTTON_VIEW,114,219,50,14
+    PUSHBUTTON      "&Save As...",IDC_BUTTON_SAVE,170,219,50,14
+    PUSHBUTTON      "Cl&ear",IDC_BUTTON_CLEAR,224,219,50,14
+    PUSHBUTTON      "&Close",IDCANCEL,224,239,50,14
+END
+
+IDD_DIALOG_GAME_SCHEDULE DIALOG DISCARDABLE  0, 0, 374, 234
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Schedule"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Schedule se&ttings:",IDC_STATIC,10,5,150,10
+    CONTROL         "List1",IDC_LIST_GAME,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,5,15,345,165
+    CONTROL         "&up",IDC_BUTTON_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    355,65,15,15
+    CONTROL         "do&wn",IDC_BUTTON_DOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,355,114,15,15
+    PUSHBUTTON      "&Save Options",IDC_BUTTON_SAVE,5,185,55,14
+    PUSHBUTTON      "&Add...",IDC_BUTTON_ADD,210,185,50,14
+    PUSHBUTTON      "&Edit...",IDC_BUTTON_EDIT,265,185,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON_DELETE,320,185,50,14
+    DEFPUSHBUTTON   "Game On",IDOK,265,215,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,320,215,50,14
+END
+
+IDD_DIALOG_OPTION_PLAYER DIALOG DISCARDABLE  0, 0, 255, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Player"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "3 Darts A&verage",IDC_CHECK_AVG_PPR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,5,230,11
+    GROUPBOX        "Player",IDC_STATIC,10,18,235,25
+    CONTROL         "&Player Name",IDC_CHECK_NAME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,28,70,10
+    CONTROL         "- &First - ",IDC_CHECK_FIRST,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,28,85,10
+    GROUPBOX        "Totals",IDC_STATIC,10,47,235,55
+    CONTROL         "&Sets",IDC_CHECK_SETS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,57,60,10
+    CONTROL         "&Legs",IDC_CHECK_LEGS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,57,60,10
+    CONTROL         "&Tons",IDC_CHECK_TONS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,57,60,10
+    CONTROL         "&100+",IDC_CHECK_100,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,71,60,10
+    CONTROL         "1&40+",IDC_CHECK_140,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,71,60,10
+    CONTROL         "1&80's",IDC_CHECK_180S,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,71,60,10
+    CONTROL         "&High Out",IDC_CHECK_HIGH_OFF,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,85,60,10
+    CONTROL         "&Best Leg",IDC_CHECK_SHORT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,85,60,10
+    CONTROL         "&Worst Leg",IDC_CHECK_LONG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,170,85,70,11
+    GROUPBOX        "Averages",IDC_STATIC,10,106,235,67
+    CONTROL         "&Darts",IDC_CHECK_AVG_DARTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,116,60,10
+    CONTROL         "S&core",IDC_CHECK_AVG_SCORE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,95,116,60,10
+    CONTROL         "First &9 Darts",IDC_CHECK_AVG_FIRST9,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,170,116,70,11
+    CONTROL         "Check-&Out",IDC_CHECK_AVG_CHECK_OUT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,129,70,11
+    CONTROL         "Check-&Out Counts",IDC_CHECK_AVG_CHECK_OUT_COUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,95,129,82,11
+    CONTROL         "&Keep",IDC_CHECK_AVG_KEEP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,143,70,11
+    CONTROL         "&Keep Counts",IDC_CHECK_AVG_KEEP_COUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,95,143,82,11
+    CONTROL         "B&reak",IDC_CHECK_AVG_BREAK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,156,70,11
+    CONTROL         "B&reak Counts",IDC_CHECK_AVG_BREAK_COUNT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,95,156,82,11
+    GROUPBOX        "Dart Out Shots",IDC_STATIC,10,177,235,25
+    CONTROL         "D&art Out Shots",IDC_CHECK_ARRANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,188,60,10
+END
+
+IDD_DIALOG_FINISH DIALOG DISCARDABLE  0, 0, 122, 116
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Check-Out"
+FONT 10, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,60,95,50,14
+    LTEXT           "How many darts did you use for the check?",IDC_STATIC,
+                    10,5,100,15
+    PUSHBUTTON      "&1st dart",IDC_BUTTON_FINISH_1,10,30,100,15
+    PUSHBUTTON      "&2nd dart",IDC_BUTTON_FINISH_2,10,50,100,15
+    PUSHBUTTON      "&3rd dart",IDC_BUTTON_FINISH_3,10,70,100,15
+END
+
+IDD_DIALOG_CHECK_OUT DIALOG DISCARDABLE  0, 0, 159, 93
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Check-Out Mode"
+FONT 10, "MS Sans Serif"
+BEGIN
+    LTEXT           "How many darts did you throw to double?",IDC_STATIC,10,
+                    10,140,15
+    EDITTEXT        IDC_EDIT_COUNT,10,30,55,27,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_COUNT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,75,35,11,15
+    LTEXT           "",IDC_STATIC,65,40,10,10
+    DEFPUSHBUTTON   "OK",IDOK,45,70,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,70,50,14
+END
+
+IDD_DIALOG_OPTION_PLUGIN DIALOG DISCARDABLE  0, 0, 255, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Plug-in"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Plug-in &settings:",IDC_STATIC,10,5,150,10
+    CONTROL         "List1",IDC_LIST_PLUGIN,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOSORTHEADER | 
+                    WS_BORDER | WS_TABSTOP,5,15,225,180
+    CONTROL         "&up",IDC_BUTTON_UP,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    235,70,15,15
+    CONTROL         "do&wn",IDC_BUTTON_DOWN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,235,124,15,15
+    PUSHBUTTON      "&Add...",IDC_BUTTON_ADD,35,200,50,14
+    PUSHBUTTON      "&Delete",IDC_BUTTON_DELETE,91,200,50,14
+    PUSHBUTTON      "&Property...",IDC_BUTTON_PROPERTY,145,200,50,14
+    PUSHBUTTON      "&Key...",IDC_BUTTON_KEY,200,200,50,14
+END
+
+IDD_DIALOG_SET_PLUGIN DIALOG DISCARDABLE  0, 0, 196, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Plug-in"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST,5,5,185,145,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,85,155,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,140,155,50,14
+END
+
+IDD_DIALOG_SET_PLUGIN_KEY DIALOG DISCARDABLE  0, 0, 127, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select key"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Shortcut &Key:",-1,10,5,105,10
+    CONTROL         "HotKey1",IDC_HOTKEY_KEY,"msctls_hotkey32",WS_BORDER | 
+                    WS_TABSTOP,10,15,105,15
+    DEFPUSHBUTTON   "OK",IDOK,10,41,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,65,41,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "&Game"
+    BEGIN
+        MENUITEM "&New Game...",                ID_MENUITEM_NEW_GAME
+        MENUITEM SEPARATOR
+        MENUITEM "N&ew Schedule...",            ID_MENUITEM_NEW_SCHEDULE
+        MENUITEM "&Modify Schedule...",         ID_MENUITEM_SET_SCHEDULE
+        MENUITEM SEPARATOR
+        MENUITEM "Game &History...",            ID_MENUITEM_GAME_HISTORY
+        MENUITEM SEPARATOR
+        MENUITEM "&Option...",                  ID_MENUITEM_OPTION
+        MENUITEM "Auto &Save",                  ID_MENUITEM_AUTO_SAVE
+        MENUITEM "&Check-Out Mode",             ID_MENUITEM_CHECK_OUT_MODE
+        MENUITEM SEPARATOR
+        MENUITEM "n01 On&line",                 ID_MENUITEM_ONLINE
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_MENUITEM_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Name",                       ID_MENUITEM_SHOW_NAME
+        MENUITEM "&Player Information",         ID_MENUITEM_SHOW_PLAYER
+        MENUITEM "&Left Score",                 ID_MENUITEM_SHOW_LEFT
+        MENUITEM "Function &Key",               ID_MENUITEM_SHOW_GUIDE
+        MENUITEM SEPARATOR
+        POPUP "Left Score &Size"
+        BEGIN
+            MENUITEM "&Larger",                     ID_MENUITEM_FONT_L
+            MENUITEM "&Medium",                     ID_MENUITEM_FONT_M
+            MENUITEM "&Smaller",                    ID_MENUITEM_FONT_S
+        END
+        MENUITEM "&Full Screen",                ID_MENUITEM_FULL_SCREEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Index of Darts",             ID_MENUITEM_SHOW_DARTSCOUNT
+    END
+    POPUP "&Score"
+    BEGIN
+        MENUITEM "&1st dart",                   ID_MENUITEM_FINISH_ONE
+        MENUITEM "&2nd dart",                   ID_MENUITEM_FINISH_TWO
+        MENUITEM "&3rd dart",                   ID_MENUITEM_FINISH_THREE
+        MENUITEM SEPARATOR
+        MENUITEM "&Middle for Diddle...",       ID_MENUITEM_MIDDLE
+        MENUITEM SEPARATOR
+        POPUP "T&emplate"
+        BEGIN
+            MENUITEM "(Nothing)",                   ID_MENUITEM_NOTHING
+            , GRAYED
+        END
+        MENUITEM "Input &Left Score",           ID_MENUITEM_SCORE_LEFT
+        MENUITEM SEPARATOR
+        MENUITEM "&Previous Leg",               ID_MENUITEM_PREV_LEG
+        MENUITEM "E&xchange Scores",            ID_MENUITEM_SCORE_SWAP
+        MENUITEM "&Clear Scores",               ID_MENUITEM_SCORE_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Dart Out Shots...",          ID_MENUITEM_ARRANGE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About...",                   ID_MENUITEM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_ARRANGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 283
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 261
+    END
+
+    IDD_DIALOG_GAME_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DIALOG_OPTION_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG_MIDDLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 69
+    END
+
+    IDD_DIALOG_SET_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 183
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_DIALOG_OPTION_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG_SCORE_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 260
+    END
+
+    IDD_DIALOG_COM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 208
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 68
+    END
+
+    IDD_DIALOG_GAME_HISTORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 271
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 250
+    END
+
+    IDD_DIALOG_GAME_SCHEDULE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 227
+    END
+
+    IDD_DIALOG_OPTION_PLAYER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG_FINISH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 115
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 109
+    END
+
+    IDD_DIALOG_CHECK_OUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 152
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_DIALOG_OPTION_PLUGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_DIALOG_SET_PLUGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DIALOG_SET_PLUGIN_KEY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 120
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_NEW_GAME    "&New Game..."
+    ID_MENUITEM_EXIT        "E&xit"
+    ID_MENUITEM_FINISH_ONE  "&1st dart"
+    ID_MENUITEM_FINISH_TWO  "&2nd dart"
+    ID_MENUITEM_FINISH_THREE "&3rd dart"
+    ID_MENUITEM_MIDDLE      "&Middle for Diddle..."
+    ID_MENUITEM_SCORE_LEFT  "&Left Score"
+    ID_MENUITEM_SCORE_SWAP  "E&xchange Scores"
+    ID_MENUITEM_SHOW_GUIDE  "Function &Key"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ACCEL_ESC            "Cancel"
+    ID_ACCEL_NONE           "No Action"
+    ID_ACCEL_UP             "Up"
+    ID_ACCEL_DOWN           "Down"
+    ID_ACCEL_TAB            "Next"
+    ID_ACCEL_STAB           "Previous"
+    ID_MENUITEM_SHOW_LEFT   "&Left Score"
+    ID_MENUITEM_SHOW_PLAYER "&Player Information"
+    ID_MENUITEM_SHOW_DARTSCOUNT "&Index of Darts"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_TITLE        "%s - %d Legs"
+    IDS_STRING_EXIT         "Do you want to exit?"
+    IDS_STRING_MENU_NOTHING "(Nothing)"
+    IDS_STRING_PLAYER1      "Player 1"
+    IDS_STRING_PLAYER2      "Player 2"
+    IDS_STRING_SAVE_TITLE   "Save As"
+    IDS_STRING_TITLE_LEG    "%s - %d Sets - (%d Legs / %d Legs)"
+    IDS_STRING_TITLE_LEG_BEST_OF "%s - %d Sets - (%d Legs / Best of %d Legs)"
+    IDS_STRING_SET_END      "%d - %d: Winner is %s."
+    IDS_STRING_COM          "COM (Lv.%d)"
+    IDS_STRING_COM_NAME     "COM"
+    IDS_STRING_SCHEDULE_MODE " - Schedule Mode"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_SCORED       "Scored"
+    IDS_STRING_TO_GO        "To Go"
+    IDS_STRING_ROUND        "Round"
+    IDS_STRING_DARTS        "Darts"
+    IDS_STRING_FIRST_MARK   "*"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_FINISH       "Game shot %d dart. (%d darts)"
+    IDS_STRING_SCORE_SWAP   "Are you sure you want to exchange scores?"
+    IDS_STRING_SCORE_CLEAR  "Are you sure you want to clear scores?"
+    IDS_STRING_TIE          "A game is a draw."
+    IDS_STRING_GAME_STOP    "Do you want to stop a game?"
+    IDS_STRING_MIDDLE       "Check in %d darts."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_FIRST      "- First -"
+    IDS_STRING_P_TOTAL      "Totals"
+    IDS_STRING_P_SETS       "Sets"
+    IDS_STRING_P_LEGS       "Legs"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_TONS       "Tons"
+    IDS_STRING_P_100        "100+"
+    IDS_STRING_P_140        "140+"
+    IDS_STRING_P_180S       "180's"
+    IDS_STRING_P_HIGHOFF    "High Out"
+    IDS_STRING_P_SHORT      "Best"
+    IDS_STRING_P_AVERAGE    "Averages"
+    IDS_STRING_P_AVG_SCORE  "Score"
+    IDS_STRING_P_AVG_DARTS  "Darts"
+    IDS_STRING_P_AVG_CHECK_OUT "Check"
+    IDS_STRING_P_AVG_CHECK_OUT_LARGE "Check-Out"
+    IDS_STRING_P_ARRANGE    "Dart out shots"
+    IDS_STRING_P_SEPARATE   ": "
+    IDS_STRING_P_COUNTS     "Counts"
+    IDS_STRING_P_WIN_DARTS  "Darts Won"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_GAME_SAVE "The present Option was saved."
+    IDS_STRING_OP_NAME      "Name:"
+    IDS_STRING_OP_LEVEL_TITLE "Level:"
+    IDS_STRING_OP_LEVEL     "Level %d"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_KEY_ACTION "Function"
+    IDS_STRING_OP_KEY_KEY   "Key"
+    IDS_STRING_OP_DELETE    "Are you sure you want to delete this item?"
+    IDS_STRING_OP_KEY_NUMBER "Template"
+    IDS_STRING_OP_KEY_NUMBER_ERROR "The range of a template is 0 to 180."
+    IDS_STRING_OP_KEY_NOTHING "Nothing"
+    IDS_STRING_OP_PLUGIN_TITLE "Title"
+    IDS_STRING_OP_PLUGIN_DLL "DLL"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_LIST_SET  "%d Sets"
+    IDS_STRING_OP_LIST_LEG  "%d Legs"
+    IDS_STRING_OP_LIST_DARTS "%d Darts"
+    IDS_STRING_OP_LIST_PLAYER_INFO "Player Information"
+    IDS_STRING_OP_LIST_CLEAR "Are you sure you want to clear history?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_SCORE_CLEAR "&Clear Scores"
+    ID_MENUITEM_ARRANGE     "&Dart Out Shots..."
+    ID_MENUITEM_GAME_HISTORY "Game &History..."
+    ID_MENUITEM_AUTO_SAVE   "Auto &Save"
+    ID_MENUITEM_NEW_SCHEDULE "N&ew Schedule..."
+    ID_MENUITEM_OPTION      "&Option..."
+    ID_MENUITEM_SET_SCHEDULE "&Modify Schedule..."
+    ID_MENUITEM_CHECK_OUT_MODE "&Check-Out Mode"
+    ID_MENUITEM_PREV_LEG    "&Previous Leg"
+    ID_MENUITEM_FONT_L      "&Larger"
+    ID_MENUITEM_FONT_M      "&Medium"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_POS_HEADER_BACKGROUND "Header Background"
+    IDS_STRING_POS_HEADER_TEXT "Header Text"
+    IDS_STRING_POS_LAST3NUMBER_TEXT "Last Three Numbers"
+    IDS_STRING_POS_LINE     "Line"
+    IDS_STRING_POS_SEPARATE "Separate"
+    IDS_STRING_POS_TON_CIRCLE "Ton Circle"
+    IDS_STRING_POS_INPUT_BACKGROUND "Input Background"
+    IDS_STRING_POS_INPUT_TEXT "Input Text"
+    IDS_STRING_POS_INPUT_SELECT_BACKGROUND "Input Select"
+    IDS_STRING_POS_INPUT_SELECT_TEXT "Input Select Text"
+    IDS_STRING_POS_LEFT_BACKGROUND "Left Score Background"
+    IDS_STRING_POS_LEFT_TEXT "Left Score Text"
+    IDS_STRING_POS_LEFT_ACTIVE_BORDER "Left Score Active Border"
+    IDS_STRING_POS_PLAYER_NAME_BACKGROUND "Player Name Background"
+    IDS_STRING_POS_PLAYER_NAME_TEXT "Player Name Text"
+    IDS_STRING_POS_PLAYER_BACKGROUND "Player Information Background"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_POS_BACKGROUND "Background (Even Lines)"
+    IDS_STRING_POS_ODD_BACKGROUND "Background (Odd Lines)"
+    IDS_STRING_POS_SCORED_TEXT "Text (Scored)"
+    IDS_STRING_POS_TOGO_TEXT "Text (To Go)"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_POS_PLAYER_TEXT "Player Information Text"
+    IDS_STRING_POS_PLAYER_INFO_TITLE "Player Information Header Text"
+    IDS_STRING_POS_VIEW_SEPARATE "View Separate"
+    IDS_STRING_POS_GUIDE_BACKGROUND "Function Key Background"
+    IDS_STRING_POS_GUIDE_TEXT "Function Key Text"
+    IDS_STRING_POS_GUIDE_SELECT_BACKGROUND "Function Key Select"
+    IDS_STRING_POS_GUIDE_SELECT_TEXT "Function Key Select Text"
+    IDS_STRING_POS_GUIDE_BOX_BACKGROUND "Function Key Box Background"
+    IDS_STRING_POS_GUIDE_BOX_TEXT "Function Key Box Text"
+    IDS_STRING_POS_GUIDE_BOX_FRAME "Function Key Frame"
+    IDS_STRING_POS_GUIDE_BOX_DISABLE "Function Key Disable"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_RESET_COLOR  "Do you want to reset colors?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_DEFAULT_FONT "Arial"
+    IDS_STRING_ARRANGE_FONT "Courier New"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_SCH_START_SCORE "Start Score"
+    IDS_STRING_OP_SCH_ROUND "Rounds"
+    IDS_STRING_OP_SCH_LEG   "Legs"
+    IDS_STRING_OP_SCH_P1    "Player 1"
+    IDS_STRING_OP_SCH_P2    "Player 2"
+    IDS_STRING_OP_SCH_BEST_OF "Best of %d"
+    IDS_STRING_OP_SCH_OK    "OK"
+    IDS_STRING_OP_SCH_TITLE "Modify Schedule"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_CHECK_OUT_MODE "The option was set as Check-Out mode."
+    IDS_STRING_AUTO_SAVE_MODE "A score is saved automatically at '%s'."
+    IDS_STRING_PREV_LEG     "Are you sure you return to previous Leg?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_DOUBLE     "Double"
+    IDS_STRING_P_LONG       "Worst"
+    IDS_STRING_P_AVG_FIRST9 "First 9"
+    IDS_STRING_P_AVG_FIRST9_SCORE "First 9 Score"
+    IDS_STRING_P_AVG_FIRST9_DARTS "First 9 Darts"
+    IDS_STRING_P_AVG_KEEP   "Keep"
+    IDS_STRING_P_AVG_BREAK  "Break"
+    IDS_STRING_P_AVG_KEEP_WON "Keep Won"
+    IDS_STRING_P_AVG_KEEP_ALL "Keep All"
+    IDS_STRING_P_AVG_BREAK_WON "Break Won"
+    IDS_STRING_P_AVG_BREAK_ALL "Break All"
+    IDS_STRING_P_FINISH_STATS "Finish Stats"
+    IDS_STRING_P_2_80_SUCCESS "2-80 Success"
+    IDS_STRING_P_2_80_FAILURE "2-80 Failure"
+    IDS_STRING_P_81_130_SUCCESS "81-130 Success"
+    IDS_STRING_P_81_130_FAILURE "81-130 Failure"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_MENU_TOOL    "&Tools"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_OP_PLUGIN_FUNCTION "Function"
+    IDS_STRING_OP_PLUGIN_NO_PROP "This Item has no options that you can set."
+    IDS_STRING_OP_FILESELECT "Select Plug-in File"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STRING_P_131_SUCCESS "131+ Success"
+    IDS_STRING_P_131_FAILURE "131+ Failure"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENUITEM_FONT_S      "&Smaller"
+    ID_MENUITEM_SHOW_NAME   "&Name"
+    IDS_STRING_LEFT         "Left"
+    IDS_STRING_RIGHT        "Right"
+    ID_MENUITEM_FULL_SCREEN "&Full Screen"
+END
+
+#endif    // 英語 (ｱﾒﾘｶ) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
